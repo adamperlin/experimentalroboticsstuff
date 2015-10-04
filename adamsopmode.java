@@ -84,6 +84,8 @@ public class adamsopmode extends OpMode {
         telemetry.addData("1 Start", "NullOp started at " + startDate);
         telemetry.addData("2 Status", "running for " + runtime.toString());
 
+        mydcmotor.setPower(1.00);
+
     }
 
 
@@ -93,6 +95,6 @@ public class adamsopmode extends OpMode {
     @Override
     public void start(){
 
-        mydcmotor.setPower(1);
+
     }
 }
